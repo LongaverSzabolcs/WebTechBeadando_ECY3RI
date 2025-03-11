@@ -89,7 +89,7 @@ const person = {
     name: 'Janika',
     age: 99,
     active: true,
-    dogs: [ 'köcsögverő', '(You)' ],
+    dogs: [ 'n', '(You)' ],
     greet: function () {
         console.log('Hello, ', this.name);
     }
