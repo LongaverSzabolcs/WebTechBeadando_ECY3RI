@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+</head>
+<body>
+    <h4 id="title"></h4>
+    <div id="profile_picture"></div>
+    <h3 id="name"></h3>
+    <div id="blog"></div>
+    <div id="location"></div>
+    <div id="bio"></div>
+    <div id="public_repos"></div>
+    <div id="followers"></div>
+    
+
+    <script src="app.js"></script>
+    <script>
+        async function loadUser(userName) {
+            try {
+                const res = await fetch('https://api.github.com/users/' + userName, {
+                    headers: {
+                        'Authorization': 'Bearer ' + GITHUB_ACCESS_TOKEN
+                    }
+                });
+
+                if (!res.ok) {
+                    throw 'Server error occurred, status code: ' + res.status;
+                }
+
+                const data = await res.json();
+                
+                const pfpElem = document.querySelector('#profile_picture');
+                pfpElem.innerHTML = `<img src="${data.avatar_url}" alt="${data.login}" width="100">`;
+
+                const nameElem = document.querySelector('#name');
+                nameElem.textContent = data.login;
+
+                const blogElem = document.querySelector('#blog');
+                blogElem.textContent = data.blog ? `Blog: ${data.blog}` : ''
+
+                const locationElem = document.querySelector('#location');
+                locationElem.textContent = data.location ? `Location: ${data.location}` : '';
+
+                const bioElem = document.querySelector('#bio');
+                bioElem.textContent = data.bio ? `Bio: ${data.bio}` : '';
+
+                const publicReposElem = document.querySelector('#public_repos');
+                publicReposElem.textContent = data.public_repos ? `Public Repositories: ${data.public_repos}` : 'No public repositories';
+
+                const followersElem = document.querySelector('#followers');
+                followersElem.textContent = data.followers ? `Followers: ${data.followers}` : 'No followers';
+
+            } catch (error) {
+                console.error('Error loading user:', error);
+                const mainDiv = document.querySelector('#main');
+                mainDiv.innerHTML = `<p>Error loading user: ${error}</p>`;
+            }
+        }
+
+        const params = new URLSearchParams(window.location.search);
+        const user = params.get('name');
+
+        if (!user) {
+            alert('undefined user');
+        }
+
+        loadUser(user);
+
+    </script>
+</body>
+</html>

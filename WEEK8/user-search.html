@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h4>User keresése</h4>
+
+    <label for="user-name">User neve: </label>
+    <input type="text" id="user-name">
+    <button id="search-btn" class="btn btn-primary">Keresés</button>
+
+    <div id="results"></div>
+
+    <script src="app.js"></script>
+
+    <script>
+        function searchUser(searchText) {
+            if (!searchText) {
+                alert('Kérlek adj meg egy felhasználó nevet!');
+                return;
+            }
+
+            fetch('https://api.github.com/search/users?q=' + encodeURIComponent(searchText), {
+                headers: {
+                    'Authorization': 'Bearer ' + GITHUB_ACCESS_TOKEN
+                }
+            })
+                .then(res => res.json())
+                .then(data => {
+                    const resultDiv = document.querySelector('#results');
+                    resultDiv.innerHTML = '';
+
+                    for(const user of data.items) {
+                        const userHtml = `
+                            <div class="card">
+                                <a href="user.html?name=${user.login}"><h4>${user.login}</h4></a>
+                                <img src="${user.avatar_url}" alt="${user.login}" width="100">
+                                
+                            </div>
+                        `;
+                        resultDiv.innerHTML += userHtml;
+                    }
+                });
+        }
+    
+        const searchBtn = document.querySelector('#search-btn');
+        searchBtn.addEventListener('click', () => {
+            const searchText = document.querySelector('#user-name').value;
+            searchUser(searchText);
+        });
+
+
+    </script>
+</body>
+</html>
