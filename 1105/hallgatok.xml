@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hallgatok>
+    <hallgato id="01">
+        <keresztnev>Pal</keresztnev>
+        <vezeteknev>Kiss</vezeteknev>
+        <foglalkozas>Web dev</foglalkozas>
+    </hallgato>
+    <hallgato id="02">
+        <keresztnev>Jakab</keresztnev>
+        <vezeteknev>Rez</vezeteknev>
+        <foglalkozas>HR</foglalkozas>
+    </hallgato>
+    <hallgato id="03">
+        <keresztnev>Hato</keresztnev>
+        <vezeteknev>Minden</vezeteknev>
+        <foglalkozas>a csoport tenylegesen dolgozo tagja</foglalkozas>
+    </hallgato>
+</hallgatok>
