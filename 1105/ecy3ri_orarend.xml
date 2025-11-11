@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="ecy3ri_orarend.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<orarend>
+    <!-- Hetfo -->
+    <ora id="0" tipus="elm">
+        <targy>WebTech</targy>
+        <idopont>
+            <nap>Hetfo</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>E5</helyszin>
+        <oktato>?</oktato>
+        <szak>Mérnökinformatikus BSC</szak>
+    </ora>
+
+    <ora id="1" tipus="elm">
+        <targy>Angol</targy>
+        <idopont>
+            <nap>Hetfo</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>?</helyszin>
+        <oktato>?</oktato>
+        <szak>Mérnökinformatikus BSC</szak>
+    </ora>
+
+    <ora id="2" tipus="gyk">
+        <targy>WebTech</targy>
+        <idopont>
+            <nap>Hetfo</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>L101</helyszin>
+        <oktato>?</oktato>
+        <szak>Mérnökinformatikus BSC</szak>
+    </ora>
+
+    <ora id="3" tipus="elm">
+        <targy>Mobil</targy>
+        <idopont>
+            <nap>Hetfo</nap>
+            <tol>16</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>L101</helyszin>
+        <oktato>?</oktato>
+        <szak>Mérnökinformatikus BSC</szak>
+    </ora>
+
+    <ora id="4" tipus="gyk">
+        <targy>Mobil</targy>
+        <idopont>
+            <nap>Hetfo</nap>
+            <tol>18</tol>
+            <ig>20</ig>
+        </idopont>
+        <helyszin>L101</helyszin>
+        <oktato>?</oktato>
+        <szak>Mérnökinformatikus BSC</szak>
+    </ora>
+
+    <!-- Kedd -->
+
+    <ora id="5" tipus="elm">
+        <targy>Windows Rendszergizda</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>08</tol>
+            <ig>10</ig>
+        </idopont>
+        <helyszin>L103</helyszin>
+        <oktato>Dr. Wagner György</oktato>
+        <szak>Mérnökinformatikus BSC</szak>
+    </ora>
+
+    <ora id="6" tipus="elm">
+        <targy>Mesterséges Intelligencia</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>E32</helyszin>
+        <oktato>?</oktato>
+        <szak>Mérnökinformatikus BSC</szak>
+    </ora>
+
+    <ora id="7" tipus="gyk">
+        <targy>Mesterséges Intelligencia</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>E32</helyszin>
+        <oktato>?</oktato>
+        <szak>Mérnökinformatikus BSC</szak>
+    </ora>
+
+    <ora id="8" tipus="gyk">
+        <targy>Windows Rendszergazda</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>16</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>L103</helyszin>
+        <oktato>Dr. Wagner György</oktato>
+        <szak>Mérnökinformatikus BSC</szak>
+    </ora>
+
+    <!-- Szerda -->
+
+    <ora id="9" tipus="elm">
+        <targy>WebKezel</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>08</tol>
+            <ig>10</ig>
+        </idopont>
+        <helyszin>A1/310</helyszin>
+        <oktato>Dr. Kovács László</oktato>
+        <szak>Mérnökinformatikus BSC</szak>
+    </ora>
+
+    <ora id="10" tipus="gyk">
+        <targy>WebKezel</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>L101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Mérnökinformatikus BSC</szak>
+    </ora>
+
+    <!-- Orautkozes -->
+
+    <ora id="11" tipus="elm">
+        <targy>Valószínűségszámítás és matematikai statisztika</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>E32</helyszin>
+        <oktato>?</oktato>
+        <szak>Mérnökinformatikus BSC</szak>
+    </ora>
+
+    <ora id="12" tipus="gyk">
+        <targy>Valószínűségszámítás és matematikai statisztika</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>A1/315</helyszin>
+        <oktato>?</oktato>
+        <szak>Mérnökinformatikus BSC</szak>
+    </ora>
+
+</orarend>
